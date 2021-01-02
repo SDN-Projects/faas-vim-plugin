@@ -9,7 +9,7 @@ RUN apt-get update && apt-get install -y bash \
     libc-dev \
     python-pip
 
-RUN pip install --upgrade pip setuptools six
+RUN pip install --no-cache-dir --upgrade pip setuptools six
 RUN pip install --no-cache-dir gevent==1.2.1 flask==0.12 requests==2.13.0
 
 # Do not modify - this is the internal openwhisk invoker service port

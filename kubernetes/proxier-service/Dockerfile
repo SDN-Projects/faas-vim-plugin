@@ -1,6 +1,6 @@
 FROM docker5gmedia/ow-offload-serverprereqs:0.1
 
-RUN pip install \
+RUN pip install --no-cache-dir \
     kubernetes==10.0.1
 
 RUN mkdir -p /proxyServer
